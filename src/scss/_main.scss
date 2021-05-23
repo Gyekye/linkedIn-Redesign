@@ -1,0 +1,17 @@
+    // all import goes here 
+    //_variable imports
+    @import '../scss/variables';
+    @import '../scss/fonts';
+    // Components import@Gyekye
+    @import '../scss/components';
+    //basic configuration
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'm-bold', sans-serif;
+    }
+    
+    body {
+        background-color: $bg-color;
+    }

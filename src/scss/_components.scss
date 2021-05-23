@@ -1,0 +1,85 @@
+        @import '../scss/variables';
+        .nav-icon-list {
+            border-left: 1px solid $bg-color;
+            border-right: 1px solid $bg-color;
+            li {
+                padding: .5rem;
+                margin: 0rem .8rem;
+                position: relative;
+                cursor: pointer;
+                img.nav-icon {
+                    height: 24px;
+                    width: 24px;
+                    padding: 0.1rem;
+                    margin: 0.1rem .3rem;
+                }
+                p.icon-title {
+                    padding: .1rem;
+                    text-transform: uppercase;
+                    font-size: $small-font-size;
+                }
+                span {
+                    position: absolute;
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    background-color: orange;
+                    color: $nav-bg-color;
+                    border-radius: 50px;
+                    text-align: center;
+                    font-size: 10px;
+                    margin-left: 1.2rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+        
+        .brand-icon {
+            height: 45px;
+            width: 45px;
+        }
+        
+        .brand-icon-pad {
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.2rem 0.8rem;
+            margin: 0.5rem;
+            background-color: rebeccapurple;
+        }
+        
+        .nav-form {
+            position: relative;
+            margin: 0rem 1rem;
+            width: 400px;
+            border-right: 1px solid $border-color;
+            .form {
+                padding: .8rem 1.8rem;
+                margin: 0.8rem 1rem;
+                border: none;
+                outline: none;
+                cursor: text;
+            }
+            .form::placeholder {
+                color: $light-form-color;
+                font-size: $medium-font-size;
+                padding: 0.5rem;
+                text-transform: capitalize;
+            }
+            img {
+                display: inline-block;
+                position: absolute;
+                margin-top: 1.3rem;
+                margin-left: 1rem;
+                height: 24px;
+                width: 24px;
+            }
+        }
+        
+        .profile {
+            display: flex;
+            .profile-name {
+                display: block;
+                font-size: 16px;
+            }
+        }

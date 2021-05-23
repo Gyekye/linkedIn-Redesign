@@ -1,0 +1,10 @@
+$montserrat-font-path:"../src/fonts/Montserrat";
+$bold-font-size:18px;
+$medium-font-size:16px;
+@font-face {
+    // This is parsed as a normal function call that takes an arithmetic
+    // expression.
+    src: url(#{$montserrat-font-path}/Montserrat-Medium.woff2) format("woff2");
+    font-family: "m-bold";
+    font-weight: 700;
+}

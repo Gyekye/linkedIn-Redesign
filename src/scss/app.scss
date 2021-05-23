@@ -1,0 +1,11 @@
+// importing file containing all projects imports
+@import '../scss/main';
+// nav bar styles 
+nav {
+    background-color: $nav-bg-color;
+    display: flex;
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+}
