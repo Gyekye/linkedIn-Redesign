@@ -1,145 +1,155 @@
 @import '../scss/variables';
-.nav-icon-list {
-    border-left: 1px solid $bg-color;
-    border-right: 1px solid $bg-color;
-    padding: 1.2rem 0rem;
-    li {
-        padding: 0.95rem .5rem;
-        margin: 0rem .8rem;
-        position: relative;
-        cursor: pointer;
-        img.nav-icon {
-            height: 24px;
-            width: 24px;
-            padding: 0.1rem;
-            margin: 0.1rem .3rem;
-        }
-        p.icon-title {
-            padding: .1rem;
-            text-transform: uppercase;
-            font-size: $small-font-size;
-            text-align: left;
-        }
-        span {
-            position: absolute;
-            width: 0.8rem;
-            height: 0.8rem;
-            color: $nav-bg-color;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 10px;
-            margin-left: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-    }
-}
-
-.brand-icon {
-    height: 45px;
-    width: 45px;
-    cursor: pointer;
-}
-
-.brand-icon-pad {
-    height: inherit;
+// Navbar Styles
+nav {
+    background-color: $nav-bg-color;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1.2rem 1rem;
-    margin: 0.5rem;
-}
-
-.nav-form {
-    position: relative;
-    margin: 0rem 1rem;
-    width: 400px;
-    border-right: 1px solid $border-color;
-    padding: 0.4rem 1rem;
-    .form {
-        padding: .8rem 1.8rem;
-        margin: 0.8rem 1rem;
-        border: none;
-        outline: none;
-        cursor: text;
-    }
-    .form::placeholder {
-        color: $light-form-color;
-        font-size: $medium-font-size;
-        padding: 0.5rem;
-        text-transform: capitalize;
-    }
-    img {
-        display: inline-block;
-        position: absolute;
-        margin-top: 1.3rem;
-        margin-left: 1rem;
-        height: 24px;
-        width: 24px;
-    }
-}
-
-.profile {
-    display: flex;
-    justify-content: start;
-    cursor: pointer;
-    padding: 1.2rem 5rem;
-    position: relative;
-    img {
-        width: 44px;
-        height: 44px;
-        margin: 0rem 1rem;
-    }
-    .profile-subs {
+    height: 5rem;
+    padding: 0.8rem;
+    justify-content: space-around;
+    ul {
+        list-style-type: none;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .profile-name {
-            font-size: 16px;
-            margin-bottom: 0.3rem;
-            text-align: left;
-            .you {
-                color: $light-form-color;
-                font-size: 14px;
-                margin: 0rem 0.5rem;
-                display: inline;
+    }
+    .nav-icon-list {
+        border-left: 1px solid $bg-color;
+        border-right: 1px solid $bg-color;
+        padding: 1.2rem 0rem;
+        li {
+            padding: 0.95rem .5rem;
+            margin: 0rem .8rem;
+            position: relative;
+            cursor: pointer;
+            img.nav-icon {
+                height: 24px;
+                width: 24px;
+                padding: 0.1rem;
+                margin: 0.1rem .3rem;
+            }
+            p.icon-title {
+                padding: .1rem;
                 text-transform: uppercase;
+                font-size: $small-font-size;
+                text-align: left;
+            }
+            span {
+                position: absolute;
+                width: 0.8rem;
+                height: 0.8rem;
+                color: $nav-bg-color;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 10px;
+                margin-left: 1.2rem;
+                margin-bottom: 0.5rem;
             }
         }
-        p {
-            text-transform: lowercase;
-            color: $light-form-color;
-            font-size: 14px;
+    }
+    .brand-icon {
+        height: 45px;
+        width: 45px;
+        cursor: pointer;
+    }
+    .brand-icon-pad {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem 1rem;
+        margin: 0.5rem;
+    }
+    .nav-form {
+        position: relative;
+        margin: 0rem 1rem;
+        width: 400px;
+        border-right: 1px solid $border-color;
+        padding: 0.4rem 1rem;
+        .form {
+            padding: .8rem 1.8rem;
+            margin: 0.8rem 1rem;
+            border: none;
+            outline: none;
+            cursor: text;
         }
-        span {
-            color: #02B033;
-            position: absolute;
-            transform: translateX(120px) translateY(26px);
-            font-size: 14px;
+        .form::placeholder {
+            color: $light-form-color;
+            font-size: $medium-font-size;
+            padding: 0.5rem;
+            text-transform: capitalize;
         }
         img {
-            width: 16px;
-            height: 16px;
+            display: inline-block;
             position: absolute;
-            transform: translateX(135px) translateY(28px);
+            margin-top: 1.3rem;
+            margin-left: 1rem;
+            height: 24px;
+            width: 24px;
+        }
+    }
+    .profile {
+        display: flex;
+        justify-content: start;
+        cursor: pointer;
+        padding: 1.2rem 5rem;
+        position: relative;
+        img {
+            width: 44px;
+            height: 44px;
+            margin: 0rem 1rem;
+        }
+        .profile-subs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .profile-name {
+                font-size: 16px;
+                margin-bottom: 0.3rem;
+                text-align: left;
+                .you {
+                    color: $light-form-color;
+                    font-size: 14px;
+                    margin: 0rem 0.5rem;
+                    display: inline;
+                    text-transform: uppercase;
+                }
+            }
+            p {
+                text-transform: lowercase;
+                color: $light-form-color;
+                font-size: 14px;
+            }
+            span {
+                color: #02B033;
+                position: absolute;
+                transform: translateX(120px) translateY(26px);
+                font-size: 14px;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                transform: translateX(135px) translateY(28px);
+            }
+        }
+    }
+    .other-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0rem 1.5rem;
+        padding: 1.2rem 1rem;
+        border: 1px solid $border-color;
+        img {
+            height: 24px;
+            width: 24px;
+            margin: 0rem 0.8rem;
+        }
+        p {
+            font-size: 14px;
+            cursor: pointer;
         }
     }
 }
 
-.other-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-    margin: 0rem 1.5rem;
-    padding: 1.2rem 1rem;
-    border: 1px solid $border-color;
-    img {
-        height: 24px;
-        width: 24px;
-        margin: 0rem 0.8rem;
-    }
-    p {
-        font-size: 14px;
-        cursor: pointer;
-    }
-}
+// profile styles

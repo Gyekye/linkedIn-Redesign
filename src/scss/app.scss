@@ -2,14 +2,5 @@
 @import '../scss/main';
 // nav bar styles 
 nav {
-    background-color: $nav-bg-color;
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    padding: 0.8rem;
-    justify-content: space-around;
-    ul {
-        list-style-type: none;
-        display: flex;
-    }
+    ul {}
 }
